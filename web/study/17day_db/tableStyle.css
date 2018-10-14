@@ -1,0 +1,77 @@
+@charset "EUC-KR";
+/* a link Style */
+
+/* h3 tag Style */
+h3 {
+	text-align: center;
+	letter-spacing: 10px;
+}
+
+/* a tag Style */
+a {
+	text-decoration: none;
+	font-size: 18px;
+	color: #4E65B7;
+}
+a:hover {
+	text-shadow: 3px 2px 4px gray;
+}
+
+a:visited {
+	color: #674DB5;
+}
+
+/* form tag Style */
+form {
+	margin: 0 auto;
+}
+
+/* Table bule Style */
+.bluetop {
+	margin: 0 auto;
+	width: 800px;
+	border-collapse: collapse;
+	border-top: 3px solid #168;
+	font-family: D2Coding;
+}
+
+.bluetop th {
+	color: #168;
+	background: #f0f6f9;
+}
+
+.bluetop th, .bluetop td {
+	padding: 10px;
+	border: 1px solid #ddd;
+}
+
+.bluetop th:first-child .bluetop td:first-child {
+	border-left: 0;
+}
+
+.bluetop th:last-child .bluetop td:last-child {
+	border-right: 0;
+}
+
+/* Table buttons */
+.table_buttons {
+	margin: 10px auto;
+	width: 800px;
+	text-align: right;
+}
+
+/* button Style */
+.buttons {
+	background: #FFFCFC;
+	border: none;
+	border-top: 1px solid #1AAB8A;
+	border-bottom: 1px solid #1AAB8A;
+	cursor: pointer;
+	text-align: center;
+	line-height: 150%;
+}
+
+/* td align left */
+.td_left {
+	text-align: left;
+}

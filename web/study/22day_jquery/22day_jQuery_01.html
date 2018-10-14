@@ -1,0 +1,60 @@
+<!--
+  ~ Copyright (c) 2018. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  ~ Morbi non lorem porttitor neque feugiat blandit. Ut vitae ipsum eget quam lacinia accumsan.
+  ~ Etiam sed turpis ac ipsum condimentum fringilla. Maecenas magna.
+  ~ Proin dapibus sapien vel ante. Aliquam erat volutpat. Pellentesque sagittis ligula eget metus.
+  ~ Vestibulum commodo. Ut rhoncus gravida arcu.
+  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>22day_jQuery_01.html</title>
+    <script  type="text/javascript" src="jquery-3.3.1.js"> </script>
+    <script type="text/javascript">
+        /*
+            jQuery의 기본틀
+            $ => jQuery를 사용하겠다는 의미
+
+            가장 많이 사용되는 틀.
+            이중 ready() 메서드는 굉장이 많이 사용된다.
+        */
+        // ready()방식을 줄여서 표현.
+        $(function () {
+            alert("이건 무슨 틀이지?")
+        });
+
+        //ready() 틀
+        $(document).ready(function(){
+            // 코딩영역
+            alert("First Ready");
+        });
+
+        /* 2번째 ready 부터는 random 실행 된다 */
+        $(document).ready(function () {
+           alert("두번째 실행") ;
+        });
+
+        $(document).ready(function () {
+            alert("세번째 실행");
+        });
+
+        $(document).ready(function () {
+            alert("네번째 실행");
+        });
+
+        $(document).ready(function () {
+            alert("다섯번째 실행");
+        });
+
+
+    </script>
+</head>
+<body>
+    <h2>jQuery 시작하기 </h2>
+    <p>
+        jQuery 문법 익히기
+    </p>
+</body>
+</html>

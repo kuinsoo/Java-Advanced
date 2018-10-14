@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="100.0" prefWidth="200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ThreadTimercontroller">
+   <children>
+      <Label fx:id="lblTime" alignment="CENTER" layoutX="25.0" layoutY="19.0" prefHeight="35.0" prefWidth="150.0" style="-fx-background-color: black; -fx-text-fill: yellow; -fx-font-size: 20; -fx-background-radius: 10;" text="00:00:00">
+         <font>
+            <Font name="D2Coding" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnStop" layoutX="105.0" layoutY="63.0" mnemonicParsing="false" prefWidth="70.0" text="멈춤" />
+      <Button fx:id="btnStart" layoutX="25.0" layoutY="63.0" mnemonicParsing="false" prefWidth="70.0" text="시작" />
+   </children>
+</AnchorPane>

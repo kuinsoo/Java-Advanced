@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>event_form</title>
+<script type="text/javascript">
+
+	/* 회원가입 내역 확인하는 함수 */
+	function fn_memberChk() {
+		//alert("함수가 호출 될려나?")	
+		/*form 태그 속성을 가지고 온다*/
+		var f = document.fm;		// form 태그 영역 이름 fm을 전부 가져온다.
+		var mem_id = f.mem_id.value;
+		if( mem_id.value != "") {
+			alert("입력된 값 출력하기 : " + mem_id);
+			f.action = "http://www.daum.net";	//이동할 페이지 이름을 정의
+			f.submit();	// 이동 시킨다
+		} else {
+			alert("아이디를 입력해 주세요");
+			return;
+		}
+			
+		}
+	
+</script>
+</head>
+<body>
+	<h3>입력 페이지 만들기</h3>
+	<p>
+		입력 페이지를 만들 때는..
+		항상 form 태그를 만들어 줍니다.
+		그리고 form태크 안에 입력을 받기위한 태그들을 정의해 줍니다
+	</p>
+	
+	<form name="fm" action="http://www.daum.net" method="post">
+	
+		아이디 : 
+		<input type="text" name="mem_id" id="mem_id"/>
+		<br />
+		
+		<input type="submit" value="회원가입하기"/>
+		||
+		<input type="button" value="회원가입" 
+			onclick="fn_memberChk()"/>
+	
+	</form>
+</body>
+</html>

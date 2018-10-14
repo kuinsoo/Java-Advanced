@@ -1,0 +1,43 @@
+<!--
+  ~ Copyright (c) 2018. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  ~ Morbi non lorem porttitor neque feugiat blandit. Ut vitae ipsum eget quam lacinia accumsan.
+  ~ Etiam sed turpis ac ipsum condimentum fringilla. Maecenas magna.
+  ~ Proin dapibus sapien vel ante. Aliquam erat volutpat. Pellentesque sagittis ligula eget metus.
+  ~ Vestibulum commodo. Ut rhoncus gravida arcu.
+  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>22day_jQuery_04.html</title>
+    <script type="text/javascript" src="jquery-3.3.1.js"></script>
+
+    <script type="text/javascript">
+        // 짝수/홀수의 위치 값별로 색상 적용하기
+        // 시작값은 0부터 시작합니다.
+        // 짝수는 0,2,4..
+        $(function () {
+            // h3 태그들 중에서 짝수번째인 h3를 선택택 (even)
+            // css.({두개이상의 스타일을 적용할때 중괄호사용})
+            $("h3:even").css({
+                backgroundColor: "black",
+                color: "white"
+            });
+
+        });
+    </script>
+</head>
+<body>
+    <h2>jQuery ::: 필터링 </h2>
+    <h3>Header-0</h3>
+    <h3>Header-1</h3>
+    <h3>Header-2</h3>
+    <h3>Header-3</h3>
+    <h3>Header-4</h3>
+    <h3>Header-5</h3>
+
+
+
+</body>
+</html>

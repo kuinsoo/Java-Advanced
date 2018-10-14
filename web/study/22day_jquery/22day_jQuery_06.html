@@ -1,0 +1,41 @@
+<!--
+  ~ Copyright (c) 2018. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  ~ Morbi non lorem porttitor neque feugiat blandit. Ut vitae ipsum eget quam lacinia accumsan.
+  ~ Etiam sed turpis ac ipsum condimentum fringilla. Maecenas magna.
+  ~ Proin dapibus sapien vel ante. Aliquam erat volutpat. Pellentesque sagittis ligula eget metus.
+  ~ Vestibulum commodo. Ut rhoncus gravida arcu.
+  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>22day_jQuery_06.html</title>
+    <script type="text/javascript" src="jquery-3.3.1.js" ></script>
+    <script>
+        // 위치값을 필터링해서 사용하기..
+        $(document).ready(function () {
+            // h3태그들의 위치값 중 3의 배수들에 대해서만 필터링된 h3 스타일 적용
+            $("h3").filter(function (index) {
+                // index 위치값.. 0~5까지의 위치값
+                // 3의 배수인 경우에만 css 적용하기
+                return index % 3 == 0;
+            }).css({
+                // 필터링된 h3태그에 대해서는 스타일 적용
+                backgroundColor: "black",
+                color: "white"
+            });
+        });
+    </script>
+
+</head>
+<body>
+<h2>jQuery ::: 필터링 </h2>
+<h3>Header-0</h3>
+<h3>Header-1</h3>
+<h3>Header-2</h3>
+<h3>Header-3</h3>
+<h3>Header-4</h3>
+<h3>Header-5</h3>
+</body>
+</html>

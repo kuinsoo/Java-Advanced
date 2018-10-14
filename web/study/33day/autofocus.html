@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>autofocus.html</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            var input_1 = document.querySelectorAll("input")[0];
+            var input_2 = document.querySelectorAll("input")[1];
+
+            input_1.onkeydown = function () {
+              if (input_1.value.length >= 6) {
+                  input_2.focus();
+              }
+            };
+
+            input_2.onkeydown = function (event) {
+
+                var event = event || window.event;  // window  iEE 윈도우 / 없으면 글로벌 grobal : google
+
+                if (event.keyCode == 8 && input_2.value.length == 0) {  // 8키보드 backspace 버튼 과 같다.
+                    input_1.focus();
+                    alert(event.keyCode);
+                }
+            };
+        });
+    </script>
+</head>
+<body>
+    <input type="text" maxlength="6" />
+    <span>-</span>
+    <input type="text" maxlength="7"/>
+    <input type="button"  onclick="test()" value="">
+</body>
+</html>

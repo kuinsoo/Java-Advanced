@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>date_test</title>
+<script type="text/javascript">
+
+	/*날짜를 사용하기 위해서는 date 객체를 생성해야 합니다.*/
+	var date = new Date();
+	
+	/*객체 생성 후 member(요소)에 접근)  "멤버 변수, 멤버 함수" */
+	
+	//년도
+	var yyyy = date.getFullYear();
+	//월
+	var mm = date.getMonth() + 1;
+	// 일.. 
+	var dd = date.getDate();
+	// 시간
+	var hh = date.getHours();
+	// 분
+	var min = date.getMilliseconds();
+	// 초
+	var sec = date.getSeconds();
+	// 요일 (일월화수목금토)
+	var day = date.getDay();
+	
+	// 요일 한글로 표기
+	var days= "";
+	switch(day) {
+	case 0:
+		days = "일";
+		break;
+	case 1:
+		days = "월";
+		break;
+	case 2:
+		days = "화";
+		break;
+	case 3:
+		days = "수";
+		break;
+	case 4:
+		days = "목";
+		break;
+	case 5:
+		days = "금";
+		break;
+	default:
+		days = "토";
+		break;
+	}
+	
+	
+	//분기 표기
+	var sub = "";
+	switch(mm) {
+	case 1: case 2: case 3:
+		sub = "1분기"
+		break;
+	case 4: case 5: case 6:
+		sub = "2분기"
+		break;
+	case 7: case 8: case 9:
+		sub = "3분기"
+		break;
+	default :
+		sub = "4분기"
+		break;
+	
+	}
+	
+	// 출력 
+	alert(year);
+	document.write("년도 : " + year);
+	
+	
+</script>
+</head>
+<body>
+	<h1>날짜 타입은 매우 중요해요..</h1>
+	<p>
+		날짜 표현 방법 (DB에서 사용하는 방법과 동일)
+		1. yyyy-MM-dd
+		2. yyyy/MM/dd
+		3. yyyy.MM.dd
+		
+		다만, 날짜 값을 뽑아내는 것은 서버쪽 날짜를 사용...
+		HTML 영역에서는 날짜를 표현하는 형태로만 사용..
+		(표현 : 출력만... )
+	</p>
+	
+	<p>
+		년도 : <script>document.write(yyyy);</script>
+		월: <script>document.write(mm);</script>
+		일: <script>document.write(dd);</script>
+		시간 : <script>document.write(hh);</script>
+		분 : <script>document.write(min);</script>
+		초 : <script>document.write(sec);</script>
+		요일 : <script>document.write(day);</script>
+	</p>
+		
+	<p>
+		요일 : 0(일요일), 1(월요일)... ~(6토요일)
+	</p>
+		오늘은 무슨 요일 인가요? 한글명으로 표현해 주세요.!
+		오늘은 : [<script> document.write(days) </script>] 입니다.
+	<p>
+		분기 : 1분기/2분기/3분기/4분기
+		1분기: 1~3월까지
+		2분기: 4~6월까지
+		3분기: 7~9월가지
+		4분기: 10~12월까지
+	</p>
+	<p>
+		지금은 몇분기 일까요?
+		지금은 [<script>document.write(sub)</script>] 입니다.
+	</p>	
+</body>
+</html>

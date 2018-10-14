@@ -1,0 +1,42 @@
+<!--
+  ~ Copyright (c) 2018. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  ~ Morbi non lorem porttitor neque feugiat blandit. Ut vitae ipsum eget quam lacinia accumsan.
+  ~ Etiam sed turpis ac ipsum condimentum fringilla. Maecenas magna.
+  ~ Proin dapibus sapien vel ante. Aliquam erat volutpat. Pellentesque sagittis ligula eget metus.
+  ~ Vestibulum commodo. Ut rhoncus gravida arcu.
+  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>22day_jQuery_08.html</title>
+    <script type="text/javascript", src="jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            // $("h1").css({background : "orange",
+            // });
+            // $("h1:even").css("color","red");
+            // $("h1:odd").css("color","blue");
+
+            $("h1").css({background : "orange"})
+                .filter(":even").css("color","red").end()
+                .filter(":odd").css("color","blue");
+        });
+    </script>
+</head>
+<body>
+    <!--h1태그 6개를 만드세요
+    전체 배경색은 오랜지 색
+    even: 짝수번째 텍스트 색상은 빨강  / odd: 홀수번째 텍스트 색상은 파랑색-->
+
+    <% int i = 0; %>
+    <script>
+        for (var i = 0;  i < 6; i++){
+            document.write( "<h1>test == <%i++; %></h1>");
+        }
+    </script>
+
+</body>
+</html>

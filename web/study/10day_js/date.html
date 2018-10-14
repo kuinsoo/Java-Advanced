@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>date</title>
+<script type="text/javascript">
+
+// date 객체를 선언 합니다: 현재 시간 측정
+
+var date = new Date();
+var hours = date.getHours();
+
+// 조건문
+if (hours < 5) {
+	document.write('잠을 자렴...');
+} else {
+	if (hours < 7) {
+		document.write('준비');
+	}else {
+		if (hours < 9) {
+			document.write("출근");
+		} else {
+			if (hours < 12 ) {
+				document.write("빈둥빈둥");
+			}else {
+				if(hours < 1 ) {
+					document.write("식사");
+				} else {
+					document.write("곧식사");
+				}
+			}
+		}
+	}
+}
+
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+	<style type="text/css">
+		/* 후손에 접근 할 때는 한칸 띄우기*/
+		#header > h1{
+		 	color: red;
+					 	
+		}
+		
+		#section > h1{
+			color: blue;
+		}
+		
+		.pID{
+			color:gray;
+		}
+	</style>
+</head>
+<body>
+	<h1>부모로부터 후손에게 접근하기</h1>
+	<hr/>
+	
+	<div id="header">
+		<h1 class="title">타이틀이 들어가는 영역</h1>
+		<div id="nav">
+			<h1>상단 메뉴가 들어가는 영역</h1>
+		</div>
+		<p class="pID">너가 누군지 알고 싶은데</p>
+	</div>
+	
+	<div id="section">
+		<h1 class="title">너는 누구니</h1>
+		<p class="pID">알려고하면 다쳐</p>
+	</div>
+
+</body>
+</html>

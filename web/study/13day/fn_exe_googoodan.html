@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>fn_exe_googoodan</title>
+<script type="text/javascript">
+	/*
+		함수이름 ggdan으로 생성..
+		몇 단인지를 인자로 받아서
+		행당 단에 대해서 출력하는 함수를 만들어 주세요..
+		
+		출력 내용.
+		4단
+		4 * 1 = 4
+		..
+		..
+	*/
+	
+	var ggdan = function(dan) {
+		var sum = 0;
+		document.write("----- <b>" + dan + "단</b> -----<br />");
+		for(var i=1; i<10; i++){
+			sum = dan * i;
+		document.write(dan + " * " + i + " = " + sum + "<br />");
+		}
+	};
+	
+	ggdan(4);
+	
+</script>
+</head>
+<body>
+	
+</body>
+</html>

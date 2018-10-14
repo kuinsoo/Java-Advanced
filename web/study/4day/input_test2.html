@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <form class="" action="./input_test.html" method="get">
+
+
+    <h1>회원가입 페이지 만들기</h1>
+    <hr/>
+
+    <!--  테이블표를 이용해서 그림을 그려 보아요 -->
+    <table border="1">
+      <tr>
+        <td>
+            이름
+        </td>
+        <td>
+            <input type="text" name="mem_name"/>
+        </td>
+      </tr>
+
+      <tr>
+        <td>
+            성별
+        </td>
+        <td>
+          <!-- radio는 name은 똑같이 합니다. 값만 틀리게 -->
+          <input type="radio" name="mem_gen" value="m"/>남자
+          <input type="radio" name="mem_gen" value="w"/>여자
+        </td>
+      </tr>
+
+    </table>
+    <input type="submit" value="저장하기">
+    </form>
+  </body>
+</html>

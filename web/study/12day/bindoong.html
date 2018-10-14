@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>bindoong</title>
+<script type="text/javascript">
+
+	// Date 객체를 선업하니다. 현재 시간 측정
+	var date = new Date();
+	var hours = date.getHours();
+	
+	//조건문 
+	if( hours < 5 ) {
+		document.write('잠을 자렴...');
+	} else if ( hours < 7 ) {
+		document.write("준비");
+	} else if ( hours < 9) {
+		document.write("출근");
+	} else if ( hours < 12 ) {
+		document.write("빈둥빈둥"); 
+	} else if ( hours < 1 ) {
+		document.write("식사");
+	} else {
+		//여러가지 입무를  수행합니다.
+	}
+	
+
+</script>
+</head>
+<body>
+	<h1>다중 if문..</h1>
+	<p>
+		중첩 == 다중 조건문을 사용할 대 고려할 부분..
+		굳이, 중첩 조건문을 사용할 경우에는...
+		if~else if () ... else 문으로 사용가능한 
+	</p>
+</body>
+</html>

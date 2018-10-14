@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>class_basic</title>
+<script type="text/javascript">
+	/*
+		클래스 선언하기
+		클래스에는 여러개의 타입을 넣을 수 있다.
+		key : value로 정의 된다.
+		호출 할 때는 객체명.멤버 로 접근한다.
+	*/
+	
+	var class_list = {	 // 클래스 변수
+		mem_id: 'a001',
+		mem_name: "홍길동",
+		mem_age: 24,
+		mem_addr: "대전"
+	};
+	
+	document.write("mem_id : " + class_list.mem_id + "<br />");
+	
+	document.write("mem_name : " + class_list.mem_name + "<br />");
+	document.write("mem_age : " + class_list.mem_age + "<br />");
+	document.write("mem_addr : " + class_list.mem_addr + "<br />");
+	document.write("mem_id :" + class_list["mem_id"]);
+	
+</script>
+</head>
+<body>
+	
+</body>
+</html>

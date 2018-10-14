@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap
+        PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"
+        "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<!-- 처리할 SQL문을 작성하는 문서 -->
+
+<!-- namespace 속성: 아래에서 작성한 SQL 문을 호출할 때 같이 사용한다. -->
+<sqlMap namespace="memberTest">
+    <!-- basic.MemberVO 대신 memVo를 사용할 수 있다. -->
+    <typeAlias alias="mymemberVo" type="vo.MyMemberVo"/>
+    <!-- 이 영역에 SQL문에 맞는 태그를 사용하여 SQL문을 기술한다
+        사용할 수 있는 기본적인 태그들
+        <select id=""> ~~ </select>
+        <insert id=""> ~~ </insert>
+         <delete id=""> ~~ </delete>
+        <update id=""> ~~ </update>
+        ===========================
+        위 태그에서 사용되는 속성들
+        1) id 속성 : 해당 태그를 홀출할 때 위의 <sqlMap> 태그의 namespaceㅇ와 연결하여 사용하는 이름.
+
+        2) parameterClass 속성 : sql문에 사용될 Data가 들어있는 객체를 지정한다.
+                                (보통 VO클래스, 자바의 자료형이름 등이 사용된다.)
+
+        3) resultClass 속성 : select 문에서만 사용되며 select 문을 실행한 결과를 담을 객체를 지정한다.
+     -->
+
+    <!-- insert 연습 -->
+    <insert id="insertMyMember" parameterClass="mymemberVo">
+ 	insert into mymember (MEMBER_ID, MEMBER_NAME, MEMBER_TEL, MEMBER_ADDR) values (#id#, #name#, #telephone#, #address#)
+    </insert>
+
+    <!-- delete 연습 -->
+    <!-- parameterClass에 설정되는 값이 단일값 (죽, 1개의 데이터) 이면
+           SQL문에 이 값을 나타내는 변수는 특별히 이름이 정해지지 않았다.
+           (즉 사용자가 임의로 지정할 수 있다.)-->
+    <!--<delete id="deleteMember" parameterClass="String">-->
+        <!--&lt;!&ndash;   delete from mymember where mem_id = #mem_id# &ndash;&gt;-->
+        <!--delete from mymember where mem_id = #lksdjflkas#-->
+    <!--</delete>-->
+
+    <!-- parameterClass 나 resultClass 에 객체를 설정할 때는 극 개체의 풀네임(패키지명까지  기술)을 설정해야 한다.
+            그런데 이 풀네임이 길어질 경우에는 매우 불편한 경우가 있다.
+            그래서 이 풀네임 대신 사용할 alias 를 설정한 후 사용할 수 있다.
+
+            이때 사용되는 태그가  <typeAlias> 인데 이 태그는 제일 위쪽에 만들어준다.
+    -->
+    <!--<update id="updateMember" parameterClass="memVo">-->
+ 	<!--update mymember set mem_name = #mem_name#, mem_tel = #mem_tel#, mem_addr = #mem_addr# where mem_id = #mem_id#-->
+ <!--</update>-->
+
+    <!-- select 연습 -->
+    <!--
+        resultClass 에는 select 한 결과 중 1개의 데이터가 저장될 수 있는 객체를 지정해 준다.
+     -->
+  <!--  <select id="getAllMember" resultClass="memVo">
+ 	select * from mymember
+   </select>-->
+
+    <!--<select id="getMember" parameterClass="String" resultClass="memVo">-->
+ 	<!--select * from mymember where mem_id = #mem_id#-->
+ <!--</select>-->
+</sqlMap>

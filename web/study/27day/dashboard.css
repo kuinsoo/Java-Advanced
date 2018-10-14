@@ -1,0 +1,51 @@
+*{
+
+}
+h1 {
+    text-align: center;
+    font-family: D2Coding;
+}
+
+hr {
+    background: #50aeb3;
+}
+
+table {
+
+    margin: 0 auto;
+    border-collapse: collapse;
+    border-top: 3px solid #168;
+
+}
+
+table th,  table td {
+    padding: 7px;
+    border: 1px solid #ddd;
+}
+
+table th {
+    color: #168;
+    background: #f0f6f9;
+    text-align: center;
+}
+
+/* tr_header */
+#tr_header {
+
+}
+
+/* tr_container */
+#tr_container td {
+    font-size: small;
+    font-weight: lighter;
+}
+
+/* tr_footer */
+#tr_footer td {
+    font-size: small;
+    font-weight: lighter;
+}
+
+#tr_footer td {
+    text-align: center;
+}

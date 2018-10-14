@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>frameImage_exe.html</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="jQueryRotateCompressed.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var h= 0;
+            var m= 7;
+            var s= 1;
+
+
+            setInterval(function () {
+                s += 1;
+                m += 1/60;
+                h += 1/360
+
+                $("#image1").rotate(h);
+                $("#image2").rotate(m);
+                $("#image3").rotate(s);
+             },360);
+        });
+    </script>
+</head>
+<body>
+    <img src="./03_img/clock1.jpg" id="image1" />
+    <img src="./03_img/clock2.jpg" id="image2" />
+    <img src="./03_img/clock3.jpg" id="image3" />
+</body>
+</html>

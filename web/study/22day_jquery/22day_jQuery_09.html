@@ -1,0 +1,116 @@
+<!--
+  ~ Copyright (c) 2018. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  ~ Morbi non lorem porttitor neque feugiat blandit. Ut vitae ipsum eget quam lacinia accumsan.
+  ~ Etiam sed turpis ac ipsum condimentum fringilla. Maecenas magna.
+  ~ Proin dapibus sapien vel ante. Aliquam erat volutpat. Pellentesque sagittis ligula eget metus.
+  ~ Vestibulum commodo. Ut rhoncus gravida arcu.
+  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>22day_jQuery_09.html</title>
+
+    <script type="text/javascript", src="jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+            $("tr").css("background", "")
+                .filter(":even").css({color:"red" , background:"beige"}).end()
+                .filter(":odd").css("color","blue");
+            $("tr").eq(0).css({color:"black" , background:"white"});
+
+
+        });
+    </script>
+</head>
+<body>
+    <!--테이블-->
+    <!--첫번째 행은 제목이 들어가는 th -->
+    <!--두번째 행부터는 td-->
+    <!---->
+    <!--총 행의 갯수는 10개-->
+    <!--컬럼은 아이디, 이름, 주소-->
+    <!--값음 임의-->
+    <!---->
+    <!--짝수번째와 홀수번째 색상을 달리해서 -->
+    <!--짝수번재 행은 노랑색-->
+    <!--홀수번째 행은 오랜지색으로 나타나게 해주세요-->
+
+    <table border="1">
+        <tr>
+            <th>아이디</th>
+            <th>이름</th>
+            <th>주소</th>
+        </tr>
+     <!--  <script>
+           for (var i =0; i < 10; i++) {
+               document("<tr><td> a00" + i + "</td></tr>");
+               document("<tr><td> 로봇 00" + i + "</td></tr>");
+               document("<tr><td> 대전광역시 아파트 10" + i + "호</td></tr>");
+           }
+       </script>-->
+        <tr>
+            <td>a001</td>
+            <td>가나다</td>
+            <td>주소는 101호 입니다</td>
+        </tr>
+
+        <tr>
+            <td>a002</td>
+            <td>나다라</td>
+            <td>주소는 102호 입니다</td>
+        </tr>
+
+        <tr>
+            <td>a003</td>
+            <td>다라마</td>
+            <td>주소는 103호 입니다</td>
+        </tr>
+
+        <tr>
+            <td>a004</td>
+            <td>라마바</td>
+            <td>주소는 104호 입니다</td>
+        </tr>
+
+        <tr>
+            <td>a005</td>
+            <td>마바사</td>
+            <td>주소는 105호 입니다</td>
+        </tr>
+
+        <tr>
+            <td>a006</td>
+            <td>바사아</td>
+            <td>주소는 106호 입니다</td>
+        </tr>
+
+        <tr>
+            <td>a007</td>
+            <td>사아자</td>
+            <td>주소는 107호 입니다</td>
+        </tr>
+
+        <tr>
+            <td>a008</td>
+            <td>아자차</td>
+            <td>주소는 108호 입니다</td>
+        </tr>
+
+        <tr>
+            <td>a009</td>
+            <td>자차카</td>
+            <td>주소는 109호 입니다</td>
+        </tr>
+
+        <tr>
+            <td>a010</td>
+            <td>차카타</td>
+            <td>주소는 110호 입니다</td>
+        </tr>
+    </table>
+</body>
+</html>

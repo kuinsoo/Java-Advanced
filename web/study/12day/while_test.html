@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>while_test</title>
+<script type="text/javascript">
+	
+	/*
+		1부터 100까지의 범위 중에 짝수의 합이 55보다 큰 시점에서 빠저 나와 주세요
+		while 문은 무한반복 조건을 수행합니다.
+	*/
+	var sum = 0;
+	var i = 0;
+	while(true) {
+		if( i % 2 == 0){
+			sum += i;
+		}else if(sum >= 55){
+			break;
+		}
+		i++;
+	}
+	alert(sum);
+	
+</script>
+</head>
+<body>
+	
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!--
+  ~ Copyright (c) 2018. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  ~ Morbi non lorem porttitor neque feugiat blandit. Ut vitae ipsum eget quam lacinia accumsan.
+  ~ Etiam sed turpis ac ipsum condimentum fringilla. Maecenas magna.
+  ~ Proin dapibus sapien vel ante. Aliquam erat volutpat. Pellentesque sagittis ligula eget metus.
+  ~ Vestibulum commodo. Ut rhoncus gravida arcu.
+  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>22day_jQuery_05.html</title>
+    <script type="text/javascript" src="jquery-3.3.1.js"></script>
+
+    <script type="text/javascript">
+        // 짝수인 h3 태그를 찾아서 스타일 적용
+        // filter 이용
+        $(document).ready(function () {
+            $("h3").filter(":even").css({
+                backgroundColor:"black",
+                color: "yellow"
+            });
+        });
+
+
+    </script>
+</head>
+<body>
+
+<h2>jQuery ::: 필터링 </h2>
+<h3>Header-0</h3>
+<h3>Header-1</h3>
+<h3>Header-2</h3>
+<h3>Header-3</h3>
+<h3>Header-4</h3>
+<h3>Header-5</h3>
+
+</body>
+</html>

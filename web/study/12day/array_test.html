@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>array_test</title>
+<script type="text/javascript">
+	
+	var array = [273, 32, 103, 57, 52];
+	/* array = [273,'문자열', true, function(){}, [32,103]]; */
+	document.write(array.length);
+		
+	// array 배열에 있는 값들을 짝수의 합과 홍수의 합으로 구분하여 화면에 출력해주세요.
+	var evenNumber = 0;
+	var oddNumber = 0;
+	for(var i = 0; i < array.length; i++) {
+		array[i] % 2 != 0 ? evenNumber += array[i] : oddNumber +=array[i]; 
+	}
+	
+	document.write("<br/>홀수: " + evenNumber + "<br/>짝수: " + oddNumber )
+	
+
+</script>
+</head>
+<body>
+	
+</body>
+</html>

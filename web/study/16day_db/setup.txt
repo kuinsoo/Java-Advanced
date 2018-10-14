@@ -1,0 +1,18 @@
+웹 어플리케이션 프로그래밍 환경...
+
+1. WEB 서버		: 	Apache Tomcat
+2. DB 서버		:	Oracle			(MySQL, MS-SQL)
+3. 개발 툴		: 	Eclipse
+4. 프로그램
+	- 웹 어플리케이션
+		: 클라이언트영역 : html, css, javascript
+		: 웹스크립트영역 : JSP (php, adp.net, asp, python)
+	- 어플리케이션
+		: Java (웹과 관련해서는 Servlet)
+		: Java의 모든 라이브러리 (or C#.net)
+		
+- 오픈소스 개념  mysql 6이상은 상용
+- 최적화 : linux 	> mysql + php, 	mysql + jsp (무료 / 보안쪽으로 최적화)
+		 : windows 	> mssql + as[.net
+		 : linux + windows	> oracle + jsp (대형프로젝트)  (대용량의 데이터) 
+		 

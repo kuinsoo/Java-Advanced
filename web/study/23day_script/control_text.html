@@ -1,0 +1,29 @@
+<!--
+  ~ Copyright (c) 2018. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  ~ Morbi non lorem porttitor neque feugiat blandit. Ut vitae ipsum eget quam lacinia accumsan.
+  ~ Etiam sed turpis ac ipsum condimentum fringilla. Maecenas magna.
+  ~ Proin dapibus sapien vel ante. Aliquam erat volutpat. Pellentesque sagittis ligula eget metus.
+  ~ Vestibulum commodo. Ut rhoncus gravida arcu.
+  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>control_text.html</title>
+    <script type="text/javascript" >
+        window.onload = function (ev) {
+          var html = '';
+
+            for (var i = 0; i < 10; i++) {
+                html += '<h1>Header - '  + i + ' 번째 입니다.</h1> ';
+            }
+            // 문서 내에 출력하기
+            document.body.textContent = html;
+        };
+    </script>
+</head>
+<body>
+    <h3>textContent 사용하기 글자로 인식</h3>
+</body>
+</html>

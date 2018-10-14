@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>layout_test</title>
+<style type="text/css">
+
+	body {
+		border: 1px solid red;
+		width: 500px;
+		margin: 10px auto;
+	}
+	
+	#top {
+		background: green;
+	}
+	#bottom{
+		background: purple;
+	}
+	#middle {
+		overflow: hidden;
+	}
+	
+	#left {
+		width: 150px;
+		background: red;
+		float: left;	
+	}
+	#right {
+		width: 350px;
+		height: 100px;
+		background: blue;
+		float: left;	
+	}
+
+</style>
+</head>
+<body>
+	<h1>Layout 구성</h1>
+	<hr />
+	
+	<div id="top"> Top div 영역 입니다.</div>
+	<div id="middle">
+		<div id="left">Left div 영역 입니다.</div>
+		<div id="right">Right div 영역 입니다.
+			>Right div 영역 입니다
+			>Right div 영역 입니다>Right div 영역 입니다>Right div 영역 입니다>Right div 영역 입니다>Right div 영역 입니다>Right div 영역 입니다>Right div 영역 입니다>Right div 영역 입니다>Right div 영역 입니다>Right div 영역 입니다>Right div 영역 입니다>Right div 영역 입니다>Right div 영역 입니다>Right div 영역 입니다>Right div 영역 입니다>Right div 영역 입니다>Right div 영역 입니다>Right div 영역 입니다>Right div 영역 입니다>Right div 영역 입니다>Right div 영역 입니다>Right div 영역 입니다>Right div 영역 입니다>Right div 영역 입니다>Right div 영역 입니다>Right div 영역 입니다>Right div 영역 입니다>Right div 영역 입니다>Right div 영역 입니다>Right div 영역 입니다>Right div 영역 입니다>Right div 영역 입니다>Right div 영역 입니다>Right div 영역 입니다>Right div 영역 입니다>Right div 영역 입니다>Right div 영역 입니다
+		</div>
+	</div>
+	<div id="bottom">Bottom  div 영역 입니다.</div>
+		
+	
+</body>
+</html>

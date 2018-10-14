@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE configuration
+
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+
+    <typeAliases>
+
+        <typeAlias type="bean.UserDTO" alias="user"/>
+
+        <!-- user.bean.UserDTO를 user라고 칭하겠다.(name 부여) -->
+
+    </typeAliases>
+
+
+
+    <environments default="development">
+
+        <environment id="development">
+
+            <transactionManager type="JDBC"/>
+
+            <!-- POOLED, UNPOOLED, JNDI(Java Naming and Directory Interface -->
+
+            <dataSource type="POOLED">
+
+                <property name="driver" value="oracle.jdbc.driver.OracleDriver"/>
+
+                <property name="url" value="jdbc:oracle:thin:@localhost:1521:xe"/>
+
+                <property name="username" value="kuinsoo"/>
+
+                <property name="password" value="0728"/>
+
+            </dataSource>
+
+        </environment>
+
+    </environments>
+
+
+
+    <mappers>
+
+        <mapper resource="dao/userMapper.xml"/>
+
+    </mappers>
+
+</configuration>
+
+

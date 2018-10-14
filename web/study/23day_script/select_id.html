@@ -1,0 +1,40 @@
+<!--
+  ~ Copyright (c) 2018. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  ~ Morbi non lorem porttitor neque feugiat blandit. Ut vitae ipsum eget quam lacinia accumsan.
+  ~ Etiam sed turpis ac ipsum condimentum fringilla. Maecenas magna.
+  ~ Proin dapibus sapien vel ante. Aliquam erat volutpat. Pellentesque sagittis ligula eget metus.
+  ~ Vestibulum commodo. Ut rhoncus gravida arcu.
+  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>select_id.html</title>
+    <script type="text/javascript">
+        // 이미 선언된 태그를 선택
+        window.onload = function (ev) {
+            /*
+                여기에 기능 수행할 코드 넣기 태그 선택하기 id..로 접근
+                도큐멘트(문서)내부에서 id로 정의된 이름 중에 header로 정의된 id를 선택
+                선택된 id는 h1이라는 객체 자체를 가지고 있다
+                --> 곧 객체의 모든 자원을 사용
+            */
+
+            var header = document.getElementById("header"); // 변수에 담아서 사용
+
+            //변수를 이용해서 자원에 접근
+            header.style.color = "orange";
+            header.style.backgroundColor = "pink";
+            /*
+                변수의 값을 정의한다
+                변수의 값은 언제든 바뀌고, 마지막 값이 최종값이 된다.
+            */
+            header.innerHTML = "h1 값이 변경되었습니다";
+        }
+    </script>
+</head>
+<body>
+    <h1 id="header">Header</h1>
+</body>
+</html>

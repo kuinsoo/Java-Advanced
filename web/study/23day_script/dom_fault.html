@@ -1,0 +1,32 @@
+<!--
+  ~ Copyright (c) 2018. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  ~ Morbi non lorem porttitor neque feugiat blandit. Ut vitae ipsum eget quam lacinia accumsan.
+  ~ Etiam sed turpis ac ipsum condimentum fringilla. Maecenas magna.
+  ~ Proin dapibus sapien vel ante. Aliquam erat volutpat. Pellentesque sagittis ligula eget metus.
+  ~ Vestibulum commodo. Ut rhoncus gravida arcu.
+  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>dom_fault.html</title>
+    <script type="text/javascript">
+        /* body 영역의 태그가 먼저 모두 읽혀지고 , 그다음 자바 스크립트를 수행하게 하는 함수 */
+        window.onload = function () {
+
+        //h1 태그에는 배경색 적색 적용
+        document.querySelector("h1").style.backgroundColor="red";
+        //h2 태그에는 텍스트 색상을 파랑색 적용
+        document.querySelector("h2").style.color="blue";
+        };
+    </script>
+</head>
+<body>
+
+    <h1>Process-1 : 배경색 적용하기</h1>
+    <!--<script type="text/javascript"> document.querySelector("h1").style.backgroundColor="red";</script>-->
+    <h2>Process-2 : 텍스트 색상 적용하고</h2>
+    <!--<script type="text/javascript"> document.querySelector("h2").style.color="blue";</script>-->
+</body>
+</html>

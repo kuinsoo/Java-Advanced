@@ -1,0 +1,35 @@
+<!--
+  ~ Copyright (c) 2018. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  ~ Morbi non lorem porttitor neque feugiat blandit. Ut vitae ipsum eget quam lacinia accumsan.
+  ~ Etiam sed turpis ac ipsum condimentum fringilla. Maecenas magna.
+  ~ Proin dapibus sapien vel ante. Aliquam erat volutpat. Pellentesque sagittis ligula eget metus.
+  ~ Vestibulum commodo. Ut rhoncus gravida arcu.
+  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>select_all.html</title>
+    <script type="text/javascript">
+        window.onload = function (ev) {
+            // 배열에 접근하기
+            var headers = document.querySelectorAll('h1');
+
+            // h1 태그에 직접 접근하기 주소를 이용
+            for (var i = 0; i < headers.length; i++) {
+                // 배열을 i번마다 변수에 담아서 사용;
+                var header = headers[i];
+                header.style.color = "red";
+                header.style.backgroundColor = "beige";
+                header.innerHTML = "배열이니 전부다 변경되어라"+ i + '번';
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Header-01</h1>
+    <h1>Header-02</h1>
+    <h1>Header-03</h1>
+</body>
+</html>

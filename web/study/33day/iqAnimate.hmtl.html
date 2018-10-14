@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>iqAnimate.hmtl</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+           $("#box").css({
+               //
+               width: 100,
+               height: 100,
+               background: "yellow"
+           }).animate({
+               width: 500,
+               opacity: 0.5
+           },5000);
+        });
+    </script>
+</head>
+<body>
+    <div id="box"></div>
+</body>
+</html>

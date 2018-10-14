@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+
+<mapper namespace="userSQL">
+
+    <resultMap type="user" id="userResult">
+
+        <result property="name" column="NAME"/>
+
+        <result property="id" column="id"/>
+
+        <result property="pwd" column="pwd"/>
+
+    </resultMap>
+
+
+
+    <insert id="userWrite" parameterType="user">
+        <!--  user라는 별칭은 user.bean.UserDTO를 가리킨다. mybatis-config.xml 에서 설정 -->
+
+        insert into usertable values(#{name}, #{id}, #{pwd})
+
+    </insert>
+
+    <delete id="userDelete" parameterType="user">
+		delete usertable where id = #{id} and pwd = #{pwd}
+	</delete>
+
+    <select id="getUserList" resultType="user">
+
+        <!-- <select id="getUserList" >-->
+
+        select * from usertable
+
+    </select>
+
+    <!-- <select id="getUser" resultType="user.bean.UserDTO" parameterType="String"> -->
+
+    <select id="getUser" parameterType="String" resultType="user">
+
+
+		select * from usertable where id = #{id}
+
+	</select>
+
+    <update id="updateUser" parameterType="bean.UserDTO">
+
+		update usertable set name=#{name}, pwd=#{pwd} where id=#{id}
+
+	</update>
+
+</mapper>
+
+

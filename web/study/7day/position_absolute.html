@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>position_absolute.html</title>
+<style type="text/css">
+	
+	body {
+		border: 1px solid red;
+	}
+
+	.box {
+		width: 100px;
+		height: 100px;
+		position: absolute;
+	}
+	.box:nth-child(1) {
+		background: red;
+		left: 10px;
+		top:10px;
+		z-index: 2;
+	}
+	.box:nth-child(2) {
+		background: green;
+		left: 50px;
+		top: 50px;
+		z-index: 3;
+	}
+	.box:nth-child(3) {
+		background: blue;
+		left: 90px;
+		top: 90px;
+		z-index: 1;
+	}
+	
+	body > div {
+		width: 400px;
+		height: 100px;
+		border: 3px solid black;
+		position: relative;
+		
+		overflow-y: scroll; 
+	}
+	
+</style>
+
+</head>
+<body>
+<!-- 
+	위치와 관련된 스타일이 적용되는 부분에는 가급적.. form 태그 적용하지 말아주세요. 
+	(form 입력 태그가 있는 부분에 적용)
+	그리고 nth-child() 사용시에는 위체 주의해 주세요..
+-->
+
+ 	<h1>자바 공부 쉬워요</h1>
+	<div>
+		<div class="box"> </div>
+		<div class="box"> </div>
+		<div class="box"> </div>
+	</div>
+ 	<h2>웹도 쉬워요</h2>
+</body>
+</html>

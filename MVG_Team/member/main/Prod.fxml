@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="680.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="member.main.ProdController">
+   <top>
+      <HBox alignment="CENTER_RIGHT" spacing="20.0" style="-fx-background-color: #34CC62;" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="물품검색" />
+            <TextField fx:id="tf_search" onKeyPressed="#searchText" prefWidth="800.0" promptText="검색물품 입력" />
+            <Button fx:id="btnSearch" mnemonicParsing="false" onAction="#searchProd" text="검색" />
+         </children>
+         <padding>
+            <Insets bottom="7.0" left="7.0" right="7.0" top="7.0" />
+         </padding>
+      </HBox>
+   </top>
+   <center>
+      <TableView fx:id="tv_main" onMouseClicked="#onClickEvent" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #E0F5C4;" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="col_code" minWidth="20.0" prefWidth="150.0" text="코드" />
+          <TableColumn fx:id="col_name" minWidth="20.0" prefWidth="150.0" text="자재명" />
+            <TableColumn fx:id="col_div" minWidth="20.0" prefWidth="150.0" text="품목구분" />
+            <TableColumn fx:id="col_qty" minWidth="20.0" prefWidth="150.0" text="재고수량" />
+            <TableColumn fx:id="col_price" minWidth="20.0" prefWidth="150.0" text="자재단가" />
+        </columns>
+      </TableView>
+   </center>
+   <left>
+      <ListView fx:id="list" prefHeight="592.0" prefWidth="115.0" BorderPane.alignment="CENTER" />
+   </left>
+</BorderPane>

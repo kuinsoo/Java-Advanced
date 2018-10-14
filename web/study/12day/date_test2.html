@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>date_test2</title>
+<script type="text/javascript">
+
+	//날짜 함수 생성
+	var date = new Date();
+	//시간 뽑아내기
+	var hh = date.getHours();
+	//시간을 이용해 오전/오후 처리
+	var ampm =	hh < 12 ? ampm = "오전" : ampm = "오후"; 
+	// 처리 결과 표시
+
+
+</script>
+</head>
+<body>
+	<h1>지금은 오전/오후 ??</h1>
+	<p>
+		지금은 [<script type="text/javascript">document.write(ampm)</script>] 입니다.
+	</p>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="EUC-KR">
+	<title>Insert title here</title>
+	<!-- .css를 가지고 올때는 link 태그를 사용 
+		 소스는 href를 이용
+		 .js를 가지고 올때는 기존처럼 javascript 태그를 사용
+		 소스는 src를 이용 -->
+	<!-- 경로설정
+		./는 현재 위치를 나타내고 ./는 현재위치의 위에 위치를 나타낸다
+		ex)2day에서1day를 찾아가려면 ../로 위에 폴더를 찾아간 후 그 안에있는 1day를 찾는다
+		  => ../1day/---------
+		 최상위 위치(WebContent): / (서버 적용시에만 가능)
+		 현재 위치: ./
+		 한단계 위 위치: ../
+		  -->
+	<link rel="stylesheet" href="../1day/Style.css" />
+	<script type="text/javascript" src= "./jsTest.js">
+		
+	</script>
+</head>
+<body>
+	<h1>클릭해 보세요:</h1>
+	<input type="button" value="클릭" onClick="goAlert()">
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>iqAnimate_stop.html.html</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            /* 두개의 변수 선언*/
+            var clearQueue = false;
+            var goToEnd = false;
+
+            $("#clearQueue").change(function () {
+                clearQueue = $(this).prop("checked");
+            });
+            $("#goToEnd").change(function () {
+                goToEnd = $(this).prop("checked");
+            });
+            $("#stopButton").click(function () {
+                /*goToEnd를 클릭하면 현재 상태(늘어날때 또는 줄어들때)의 스타일로 적용하여 정지시킵니다*/
+                $("#box").stop(class_Object,goToEnd);
+            });
+
+            $("#box").css({
+                width: 100,
+                height: 100,
+                background: "red"
+            });
+
+            /* setInterval 특정시간마다 기능을 반복 수행하고자 할때 사용 */
+            setInterval(function () {
+                $("#box").animate({
+                    width: 200
+                },1000).delay(1000).animate({
+                    width : 100,
+                    height: 100
+                },1000);
+            },3000);
+
+
+        });
+    </script>
+</head>
+<body>
+    <div id="box"></div>
+    <label >clearQueue</label>
+    <input id="clearqueue" type="checkbox" />
+
+    <br />
+
+    <label>goToEnd</label>
+    <input id="goToEnd"  type="checkbox" />
+
+    <br />
+
+    <input id="stopButton"  type="button" />stop
+
+</body>
+</html>

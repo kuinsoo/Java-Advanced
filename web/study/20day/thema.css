@@ -1,0 +1,15 @@
+. {
+    font-family: D2Coding;
+}
+
+
+h1 {
+    color: #1fbc02;
+    text-align: center;
+    letter-spacing: 10px;
+}
+
+body{
+    position: relative;
+    background: #f5f6f7;
+}

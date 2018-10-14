@@ -1,0 +1,49 @@
+<!--
+  ~ Copyright (c) 2018. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  ~ Morbi non lorem porttitor neque feugiat blandit. Ut vitae ipsum eget quam lacinia accumsan.
+  ~ Etiam sed turpis ac ipsum condimentum fringilla. Maecenas magna.
+  ~ Proin dapibus sapien vel ante. Aliquam erat volutpat. Pellentesque sagittis ligula eget metus.
+  ~ Vestibulum commodo. Ut rhoncus gravida arcu.
+  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>control_clock.html</title>
+    <script type="text/javascript">
+        window.onload = function () {
+            // 객체 생성
+            var cloc = document.getElementById('clock');
+
+            setInterval(function () {
+                var now = new Date();
+                var dd = now.getDate();
+                var MM = now.getMonth()+1;
+                var yyyy = now.getFullYear();
+                var hh = now.getHours();
+                var mm = now.getMinutes();
+                var sc = now.getSeconds();
+
+                if (dd<10){
+                    dd = '0' + dd;
+                }
+                if (MM<10){
+                    MM = '0' + MM;
+                }
+
+                now = yyyy + '年 ' + MM + '月 ' + dd + '日 ' + hh + '時 ' + mm + '分 ' + sc + '秒';
+
+                // 1초 마다 해당 함수를 실행합니다
+                // 초가 바꿔는 것처럼 느껴집니다.
+                cloc.style.color = "pink";
+                cloc.style.textAlign = "center";
+                cloc.innerHTML = now.toString();
+            },1000);
+        };
+    </script>
+</head>
+<body>
+    <h3 id="clock" ></h3>
+</body>
+</html>

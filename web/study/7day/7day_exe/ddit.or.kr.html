@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="EUC-KR">
+<title>ddit.or.kr</title>
+<style type="text/css">
+	span {
+		color: orange;
+		font-weight: bold;
+	}
+	
+	a {
+		text-decoration: none;
+		color: black;
+	}
+	
+	.awhite{
+		color: white;
+	}
+	
+	
+	#top {
+		height: 50px;
+		background: #281E0F;
+		color: white;
+	}
+	
+	#top ul {
+		float: right;
+	}
+	#top li{
+		
+		display: inline;
+		margin: 0px 15px;
+		float: left;
+		list-style: none;
+	}
+
+
+	#header {
+		margin: 0 auto;
+		width: 1280px;
+		height: 100px;
+		padding: 50px 0 0 0;
+		
+	}
+	#header img {
+		float: left;
+		margin: 7px 0 0 0 ;
+		
+	}
+	#header ul:nth-child(2) {
+		margin: 0 0 0 250px;
+		padding: 0;
+		float: left;
+		background: orange;
+		border-radius: 30px;
+	}
+	#header li{
+		color:white;
+		display: inline;
+		margin: 0 5px;
+		float: left;
+		list-style: none;
+		padding: 10px;
+		font-weight: bold;
+	}
+	
+	.awhite:hover{
+		color: yellow;
+	}
+	
+	#header ul:nth-child(3) {
+		margin: 0 0 0 30px;
+		padding: 0;
+		float: right;
+		background: gray;
+		border-radius: 30px;
+	}
+	
+	/* main */
+	#main {
+		margin: 0 auto;
+		width: 1280px;
+		height: 1228px;
+	}
+	
+	.mainimgs1{
+		width: 300px;
+		height: 250px;
+		float: left;
+		border: 1px solid #ccc;
+		margin: 0 5px 10px 5px;
+
+	}
+
+	.mainimgs2{
+		width: 300px;
+		height: 195px;
+		float: left;
+		border: 1px solid #ccc;
+		margin: 0 5px 10px 5px;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	
+	.width300 {
+		 width: 300px;
+	}
+	
+	.width600 {
+		width: 580px;
+		height: 200px;
+	}
+	.width1240 {
+		width: 1240px;
+		height: 100px;
+	}
+	.ellipsis {
+	
+	/*3번째 라인*/
+	}
+	.mainimgs3{
+		width: 300px;
+		height: 215px;
+		float: left;
+		border: 1px solid #ccc;
+		margin: 5px 20px 5px 0px;
+		box-sizing: border-box;
+	}
+
+	.mainimgs4{
+		width: 600px;
+		height: 215px;
+		float: left;
+		border: 1px solid #ccc;
+		margin: 5px 5px;
+	}
+	.mainimgs5{
+		width: 620px;
+		height: 215px;
+		float: left;
+		border: 1px solid #ccc;
+		margin: 5px 9px 5px 29px;
+	}
+	
+	
+	/* 5Line*/
+	.main5_1 {
+		margin: 5px 0 0 5px;
+		width: 300px;
+		height: 150px;
+		float: left;
+		border: 1px solid #ccc;
+	}
+	
+	.main5_2 {
+		margin: 5px 15px 0 5px;
+		width: 300px;
+		height: 320px;
+		float: left;
+	}
+	
+	.mainimgs6{
+		margin: 5px auto;
+		width: 1250px;
+		height: 105px;
+		border: 1px solid #ccc;
+	}
+
+	#footer {
+		width: 1250px;
+		height: 50px;
+		margin: 10px auto;
+		border-top: 1px solid #ccc;
+		border-bottom: 1px solid #ccc;
+	}
+	.footerdiv {
+
+		width: 700px;
+		height: 50px;
+		float: left;
+	}
+	
+	#footer ul {
+		margin: 10 0 10 0;
+		pause: 0;
+		width: 700px;
+		height: 50px
+		float: left;
+	}
+	
+	#footer li {
+		display: inline;
+		margin: 15px 0 0 10px;
+		height: 50px
+		float: left;
+		list-style: none;
+	}
+	
+	.footerimg {
+		width: 300px;
+		height: 40px;
+		float: right;
+	}
+	
+	#address {
+		margin: 0 auto;
+		width: 1280px;
+		height: 100px;
+	}
+	
+	.address1 {
+		width: 200px;
+		height: 60px;
+		margin: 20px 30px 20px 50px;
+		float: left;
+		
+	}
+	.address2 {
+		width: 700px;
+		height: 60px;
+		float: left;
+	}
+	.address3 {
+		width: 200px;
+		height: 60px;
+		float: right;
+		padding-top: 40px; 
+		padding-left: 30px; 
+		
+	}
+	
+
+	
+	.ellipsis {
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		display: inline-block;
+		width: 250px;
+		
+	}
+</style>
+<meta name="viewport" />
+</head>
+<body>
+	<div id="top">
+		<ul>
+			<li><a href="#" class="awhite">홈　　│</a></li>
+			<li><a href="#" class="awhite">로그인　　│</a></li>
+			<li><a href="#" class="awhite">회원가입　　│</a></li>
+			<li><a href="#" class="awhite">마이페이지　　│</a></li>
+			<li><a href="#" class="awhite">사이트맵　　│</a></li>
+			<li><a href="#" class="awhite">오시는길</a></li>
+		</ul>
+	</div>
+	
+	<div id="header">
+		<img alt="대덕인재개발원" src="http://ddit.or.kr/skin/img/logo/header-logo.jpg">
+		
+		<ul>
+			<li><a href="#" class="awhite">교육과정</a></li>
+			<li><a href="#" class="awhite">취업지원</a></li>
+			<li><a href="#" class="awhite">수강지원</a></li>
+			<li><a href="#" class="awhite">커뮤니티</a></li>
+			<li><a href="#" class="awhite">파트너십</a></li>
+			<li><a href="#" class="awhite">창조앱빌리지</a></li>
+		</ul>
+		
+		<ul>
+			<li><a href="#" class="awhite">기관소개</a></li>
+			<li><a href="#" class="awhite">사업소개</a></li>
+		</ul>                                   
+	</div>
+	
+	<div id="main" >
+		<div>
+		<img style="float:left; width:75%; height:100%;"  alt="메인 이미지" src="http://www.ddit.or.kr/file/banner/main-visual01(1).jpg">
+		</div>
+		
+		<div class="mainimgs1">
+			<h3>　공지사항</h3>
+			<a href="#" class="ellipsis">　　7월과정 합격자 발표(인공지능기반 응용SW엔지니어링 실무과정/2018.07.13면접)</a><br />
+			<a href="#" class="ellipsis">　　6월과정 합격자 발표(인공지능기반 응용SW엔지니어링 실무과정/2018.06.15면접)</a><br />
+			<a href="#" class="ellipsis">　　2월과정 합격자 발표(인공지능기반 응용SW엔지니어링 실무과정/2018.02.21면접)</a><br />
+			<a href="#" class="ellipsis">　　[2월과정 면접일정] 인공지능기반 응용SW엔지니어링 실무과정(1기)</a><br />
+			<a href="#" class="ellipsis">　　1월과정 합격자 발표(전자정부 표준프레임워크 응용SW 개발자 과정/2018.01.16면접)</a><br />
+			<a href="#" class="ellipsis">　　2017 직업능력개발 우수훈련기관 우수사례 공유 워크숍 참석</a><br />
+			<a href="#" class="ellipsis">　　12월과정 합격자 발표(전자정부 표준프레임워크 응용SW 개발자 과정/2017.12.20면접)</a><br />
+		</div>
+		<div class="mainimgs2 width300">
+			<h3>　고용노동부 수강후기</h3>
+			<a href="#">　　훈련과정 내내 많은 점을 배울 수 있었고 부족하지만 개발의 첫걸음을 뗀거 같아 기쁩니다.(2018.6월 수료생/2017 NCS 10회차)</a><br />
+			<a href="#">　　7개월이 길다고 생각했는데 두 계절이 정말 순식간에 지나가네요 ㅎㅎ 개발에 대한 공부도 정말 많이 배웠고, 크고 작은 세번의 프로젝트 진행이 실력향상에 큰 도움이 되었습니다. 무엇보다 실전같은 모의면접과 이력서 첨삭등의 취업을 하기 위한 실질적인 지도들도 너무 좋았습니다. (참고로 저는 그 지도들 덕분에 면접 잘 볼수 있었고 현재 취업된 상태입니다. (2018.6월 수료생/2017 NCS 10회차)</a><br />
+			<a href="#">　　아주 유익하고 즐거운 시간이었습니다.^^ 짧은 시간에 비전공자인 제가 이정도로 많이 배울 수 있다는 것에 감사했고 앞으로 회사생활에서도 밑거름이 될 것이라고 확신합니다. 감사합니다. 다만 조금 아쉬은점은 훈련 시수가 늘어나야 한다고 생각합니다. 전자정부 프레임웍을 활용하는 JSP의 교육시간과 데이터베이스관리에 대한 교육시간이 부족하다고 느꼈습니다. 더 배우고 싶은 욕심이 나는 유익한 교육시간이 이었습니다. 감사합니다. ^^(2018.6월 수료생/2017 NCS 10회차)</a><br />
+			<a href="#">　　커리큘럼이 적절하게 잘 짜여져있었고, 전체적으로 수업운영방식이나 교수법이 훌륭했으나, 훈련시간이 조금 부족했다는 느낌을 받았습니다. 수업이나 학습에 필요한 부분에 대한 지원도 매우 만족스러웠습니다.(2018.5월 수료생/2017 NCS 9회차)</a><br />
+		</div>
+	
+		<!-- 2번째 라인 -->
+		<div class="mainimgs3 width300">
+			<img alt="3번화면" src="./3.png">
+		</div>
+		<div class="mainimgs3 width300">
+			<img alt="4번화면" src="./4.png">
+		</div>
+		<div class="mainimgs3 width300">
+			<img alt="5번화면" src="./5.png">
+		</div>
+		<div class="mainimgs3 width300">
+			<img alt="6번화면" src="./6.png">
+		</div>
+		
+		<div class="mainimgs4">
+			<img class="width600" alt="7번화면" src="./7.png">
+		</div>
+		<div class="mainimgs5">
+			<img class="width600" alt="8번화면" src="./8.png">
+		</div>
+		
+		<!-- 5번째라인 -->
+		<div class="main5_2">
+			<div class="main5_1">
+				<img width=100% height=100% alt="산학협력협의문의" src="./9.png">
+			</div>
+			<div class="main5_1">
+				<img width=100% height=100% alt="스마트디바이스대여" src="./10.png">
+			</div>
+		</div>
+		<div class="main5_2">
+			<img width=100% height=100% alt="구인 의뢰" src="./11.png">
+		</div>
+		<div class="main5_2">
+			<img width=100% height=100% alt="SW 업계동향 & 보도자료" src="./12.png">
+		</div>
+		<div class="main5_2">
+			<img width=100% height=100% alt="SW 업계동향 & 보도자료" src="./13.png">
+		</div>
+	</div>
+		
+	<div class="mainimgs6">
+		<img class="width1240" alt="9번화면" src="./14.png">
+	</div>
+
+	<div id="footer">
+		<div class="footerdiv">
+			<ul>
+				<li>개발원</li>
+				<li>협약문의</li>
+				<li>찾아오시는 길</li>
+				<li>E-mail 상담</li>
+				<li>개인정보보호정책</li>
+				<li>이메일무단수집거부</li>
+			</ul>
+		</div>
+		<div  class="footerimg">
+			<img width = 100% height= 100%  src="./15.png">
+		</div>
+	</div>
+		
+	<div id="address">
+		<div class="address1">
+			<img width= 100% height = 100% alt="" src="./16.jpg">
+		</div>
+		<div class="address2">
+			<p>대전광역시 중구 중앙로 76 영민빌딩 2층대표전화: 042-222-8202팩스: 042-252-0678</p>
+			<p>기관명: (재)대덕인재개발원이사장: 김형응사업자등록번호: 306-82-05291</p>
+			<p>Copyrightⓒ <span>DAEDEOK HRD CENTER</span> ALL Rights Reserved</p>
+		</div>
+		<div  class="address3">
+			<select width = 100% height=100%>
+				<option> 유관기관  및 관련사이트</option>
+				<option> 유관기관  및 관련사이트</option>
+			</select>
+		</div>
+	</div>
+	
+</body>
+</html>
